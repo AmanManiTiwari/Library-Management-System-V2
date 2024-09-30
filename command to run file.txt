@@ -1,0 +1,5 @@
+wsl;cd bakend;python3 app.py
+wsl;cd bakend;redis-server
+wsl;~/go/bin/MailHog
+wsl;cd bakend;celery -A app.celery worker --loglevel=INFO            or   wsl;cd bakend;celery -A app.celery beat --max-interval 1 -l info
+cd frontend;npm run serve
